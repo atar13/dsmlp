@@ -14,8 +14,8 @@ RUN pip3 install --user --no-cache-dir torch==1.10.0+cu113 torchvision==0.11.1+c
 # Install apt packages
 USER root
 RUN apt-get update
-RUN apt-get -y install pipenv 
-RUN apt-get -y install vim zsh git
+apt-get -y install pipenv 
+apt-get -y install vim zsh git
 
 
 #  Add startup script
