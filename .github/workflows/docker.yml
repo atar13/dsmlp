@@ -38,7 +38,7 @@ jobs:
       - name: Login to Dockerhub
         run: >
           echo '${{secrets.DOCKERHUB_PASSWORD}}' | docker login
-          -u "${DOCKERHUB_USERNAME}" --password-stdin
+          -u "${DOCKERHUB_USERNAME}" --password-stdin docker.io
 
       - name: Push to Dockerhub
         run: docker push "${IMAGE_NAME}"
